@@ -11,3 +11,15 @@ print(f"The area of triangle with base {b} and height {h} is: {triangle_area}")
 
 # 2. Modify above function to take third parameter shape type. It can be either "triangle" or "rectangle". Based on shape type it will calculate area. Equation of rectangle's area is,rectangle area=length*width
 def calculate_area(base, height,shape):
+
+def calculate_area(base , height , shape) :
+    if shape == "rectangle" :
+        print ("Area of Rectangle : - ", base * height)
+    elif shape == "triangle" :
+        print ("Area of Triangle is : - ", 1 / 2 * base * height)
+    else :
+        print ("Invalid shape. Please enter 'triangle' or 'rectangle'.")
+Shape = input("Enter the Shape (rectangle OR triangle): ")
+base_or_length = float(input("Enter the 'Length or Base':  "))
+height_or_width = float (input ("Enter the 'Height or width':  "))
+calculate_area(base_or_length , height_or_width , Shape)
