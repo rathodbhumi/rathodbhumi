@@ -1,0 +1,15 @@
+# 1. After flipping a coin 10 times count the no. of heads obtained.
+result = ["heads", "tails", "tails", "heads", "tails", "heads", "heads", "tails", "tails", "tails"]
+count = 0
+
+for outcome in result:
+    if outcome == "heads":
+        count =count + 1
+print(f"The number of heads obtained: {count}")
+
+# 2. Print square of all numbers between 1 to 10 except even numbers
+for i in range(1, 11):
+    if i % 2 != 0: 
+        print(f"The square of {i} is: {i*i}")
+
+# 3. 
