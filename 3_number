@@ -1,0 +1,24 @@
+# 1. You have a football field that is 92 meter long and 48.8 meter wide. Find out total area using python and print it.
+
+      length=92
+      width=48.8
+      area=length*width
+      print(area)
+
+# 2. You bought 9 packets of potato chips from a store. Each packet costs 1.49 dollar and you gave shopkeeper 20 dollar. Find out using python, how many dollars is the shopkeeper going to give you back?
+      chips_bought=9
+      cost_per=1.49
+      amount=20
+      print("shoppkepper will give back: ",amount-(chips_bought*cost_per))
+
+# 3. You want to replace tiles in your bathroom which is exactly square and 5.5 feet is its length. If tiles cost 500 rs per square feet, how much will be the total cost to replace all tiles. Calculate and print the cost using python (Hint: Use power operator ** to find area of a square)
+      side=5.5
+      area=side**2
+      cost=500
+      print("cost is: ",area*cost)
+
+
+# 4. Print binary representation of number 17
+
+      n=17
+      print("binary representation of number is: ",format(n,'b'))
