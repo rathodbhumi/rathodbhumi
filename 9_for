@@ -12,4 +12,48 @@ for i in range(1, 11):
     if i % 2 != 0: 
         print(f"The square of {i} is: {i*i}")
 
-# 3. 
+# 3. Write a program that asks you to enter an expense amount and program should tell you in which month that expense occurred. If expense is not found then it should print that as well.
+        
+        expense_list = [2340, 2500, 2100, 3100, 2980]
+        months = ["January", "February", "March", "April", "May"]
+        expense_amount = int(input("Enter the expense amount: "))
+        found = False
+        for i, expense in enumerate(expense_list):
+            if expense == expense_amount:
+                print(f"The expense of {expense_amount} occurred in {months[i]}.")
+                found = True
+                break
+        
+        if not found:
+            print("Expense amount not found in any month.")
+# 4. Upon completing each 1 km asks you "are you tired?"
+    #If you reply "yes" then it should break and print "you didn't finish the race"
+    #If you reply "no" then it should continue and ask "are you tired" on every km
+    #If you finish all 5 km then it should print congratulations message
+        for distance in range(1, 6):
+            if distance < 5:
+                response = input(f"Upon completing {distance} km, are you tired? (yes/no): ").lower()
+        
+                if response == "yes":
+                    print("You didn't finish the race.")
+                    break
+                elif response == "no":
+                    continue
+                else:
+                    print("Invalid response. Please enter 'yes' or 'no'.")
+                    break
+            else:
+                print("Congratulations! You finished the race.")
+
+# 5. Write a program that prints following shape
+
+        *
+        **
+        ***
+        ****
+        *****
+                n=5
+                for i in range(n):
+                    for j in range(i+1):
+                        print('*', end ="")
+                    print()
