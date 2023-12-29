@@ -1,0 +1,72 @@
+# 1. Using above create a dictionary of countries and its population
+      country_population={
+      'China':143,
+      'India':136,
+      'USA':2,
+      'Pakistan':	21}
+      print(country_population)
+
+# a. print: if user enter print then it should print all countries with their population
+       population = {
+      'china': 143,
+      'india': 136,
+      'usa': 32,
+      'pakistan': 21
+          }
+        
+        def add():
+            country=input("Enter country name to add:")
+            country=country.lower()
+            if country in population:
+                print("Country already exist in our dataset. Terminating")
+                return
+            p=input(f"Enter population for {country}")
+            p=float(p)
+            population[country]=p # Adds new key value pair to dictionary
+            print_all()
+        
+        def remove():
+            country = input("Enter country name to remove:")
+            country = country.lower()
+            if country not in population:
+                print("Country doesn't exist in our dataset. Terminating")
+                return
+            del population[country]
+            print_all()
+        
+        def query():
+            country = input("Enter country name to query:")
+            country = country.lower()
+            if country not in population:
+                print("Country doesn't exist in our dataset. Terminating")
+                return
+            print(f"Population of {country} is: {population[country]} crore")
+        
+        def print_all():
+            for country, p in population.items():
+                print(f"{country}==>{p}")
+        
+        def main():
+            op=input("Enter operation (add, remove, query or print):")
+            if op.lower() == 'add':
+                add()
+            elif op.lower() == 'remove':
+                remove()
+            elif op.lower() == 'query':
+                query()
+            elif op.lower() == 'print':
+                print_all()
+        
+        if __name__ == '__main__':
+            main()
+
+#2. print: When user enters print it should print 
+
+        stock_info = {
+            'info': [600, 630, 620],
+            'ril': [1430, 1490, 1567],
+            'mtl': [234, 180, 160]
+        }
+        for company,stock_price in stock_info.items():
+            avg_stock_price=sum(stock_price)/len(stock_price)
+            print(f"{company}==>{stock_price} ==> avg:{avg_stock_price:.2f}")
