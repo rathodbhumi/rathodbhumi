@@ -1,0 +1,38 @@
+india = ["mumbai", "banglore", "chennai", "delhi"]
+pakistan = ["lahore","karachi","islamabad"]
+bangladesh = ["dhaka", "khulna", "rangpur"]
+# 1. Write a program that asks user to enter a city name and it should tell which country the city belongs to
+      city=input("Enter City ")
+      if city in india:
+          print("The city is in India")
+      elif city in pakistan:
+          print("The city is in Pakistan")
+      elif city in bangladesh:
+          print("The city is in Bangladesh")
+      else:
+          print("Please enter valid city name")
+
+  #(ii)Write a program that asks user to enter two cities and it tells you if they both are in same country or not. For example if I enter mumbai and chennai, it will print "Both cities are in India" but if I enter mumbai and dhaka it should print "They don't belong to same country"
+            
+            city1=input("Enter first City ")
+            city2=input("Enter second City ")
+            if city1 and city2 in india:
+                print("Both cities are in India" )
+            elif city1 and city2 in pakistan:
+                print("Both cities are in India" )
+            elif city1 and city2 in bangladesh:
+                print("Both cities are in India" )
+                
+            else:
+                print("They don't belong to same country")
+
+
+    # 2. Write a python program that can tell you if your sugar is normal or not. Normal fasting level sugar range is 80 to 100.
+
+            sugar=float(input("enter your fasting sugar level"))
+            if sugar<80:
+                print("Sugar is low")
+            elif sugar>100:
+                print("sugar is high")
+            else: 
+                print ("Sugar is normal")
