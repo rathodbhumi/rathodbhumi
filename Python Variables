@@ -1,0 +1,21 @@
+# 1. Create a variable called break and assign it a value 5. See what happens and find out the reason behind the behavior that you see.
+break=5+
+ output: File "main.py", line 4
+          break=5
+         ^
+          SyntaxError: invalid syntax
+
+# 2. Create two variables. One to store your birth year and another one to store current year. Now calculate your age using these two variables
+
+birth_yr=2000
+current_yr=2023
+age=current_yr-birth_yr
+print(age)
+
+# 3. Store your first, middle and last name in three different variables and then print your full name using these variables
+
+first='Yashika'
+middle='Singh'
+last='Rathod'
+print(f"Full name is {first} {middle} {last}")
+print("Full name is:",first, middle, last)
